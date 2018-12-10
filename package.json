@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Armand-Lluka/jest-testing#readme",
   "devDependencies": {
     "jest": "^23.6.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
   }
 }
