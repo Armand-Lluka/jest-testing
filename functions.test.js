@@ -20,7 +20,7 @@ test("Add 2+2 to NOT equal 5", () => {
 
 // toBeFalsy matches anything that an if statement treats as false
 
-//
+// Falsy or Truthy 
 test("should return null", () => {
     expect(functions.isNull()).toBeNull();
 });
@@ -37,13 +37,13 @@ test("should be truthy", () => {
     expect(functions.checkValue(2)).toBeTruthy(); // checks for truthy value -- IS TRUE
 });
 
-//
+// Check object
 
 test("user should be Armand Lluka", () => {
-    expect(functions.createUser()).toEqual({
+    expect(functions.createUser()).toEqual({ // toEqual for reference types (Arrays & Objects)
         firstName: "Armand",
         lastName: "Lluka"
-    }); // toEqual for reference types (Arrays & Objects)
+    }); 
 });
 
 // Less than or greater
@@ -66,9 +66,9 @@ test("Admin should be in username", () => {
     expect(usernames).toContain("Admin");
 });
 
-// Testing Async Data
 
-// Promise
+// Testing Async Data
+// Promises
 test("user fetched name should be Leanne Graham", () => {
     expect.assertions(1); // Verfies number of assertions are called, used for async code, to ensure assertions in promise/callback get called
     return functions
